@@ -1,0 +1,159 @@
+body {
+    font-family:  "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    background: white;
+    background-color: white;
+    color: #212529;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    background: rgb(200, 200, 200);
+    padding: 2rem 0;
+    color: black;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+main {
+    padding: 2rem;
+}
+
+section.team-section {
+    text-align: center;
+    background: linear-gradient(to right, #a6a7a8, #343a40);
+    padding: 2rem;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+article.team-member {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+}
+
+article.team-member:hover {
+    transform: scale(1.1); 
+}
+
+article.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+article.team-member:hover img {
+    transform: rotate(360deg);
+}
+
+.team-member-info {
+    display: none;
+    padding: 1rem;
+    background: rgba(52, 58, 64, 0.8);
+    color: rgb(154, 196, 86);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.what-we-do {
+    background:rgb(154, 196, 86);; 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(123, 122, 122, 0.5);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.project-animation {
+    animation: fadeInLeft 1.5s ease-out;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: linear-gradient(to right,rgb(154, 196, 86),rgb(154, 196, 86));
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.mb-4 {
+    text-align: center;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.tenth {
+    border: #5fb300;
+}
+
+.twelve {
+    text-align: center;
+}
+.eleventh{
+    margin-top:60px ;
+    margin-bottom:60px;
+}
